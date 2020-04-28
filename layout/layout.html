@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>水平垂直居中练习</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        #body{
+            border: 1px solid black;
+            width: 300px;
+            height:300px;
+            writing-mode: vertical-lr;/*定义文本在水平/垂直方向如何排列 垂直方向内内容从上到下，水平方向从左到右 */
+            text-align: center;
+        }
+        #wrapper{
+            width: 100%;
+            writing-mode:horizontal-tb; /*horizontal-tb：水平方向自上而下的书写方式。 */
+            display: inline-block; 
+            text-align: center;
+        }
+        #box{
+            background-color:red; 
+            display: inline-block;
+            margin: auto;
+            text-align: left;
+        } 
+    </style>
+</head>
+<body>
+    <div id="body">
+        <div id="wrapper">
+            <div id="box">水平垂直居中</div>
+        </div>
+    </div>
+    
+    <!-- <div>
+        <table>
+            <tbody>
+                <tr >
+                    <td id="wrapper"><div id="box">水平垂直居中</div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+</body>
+</html>
